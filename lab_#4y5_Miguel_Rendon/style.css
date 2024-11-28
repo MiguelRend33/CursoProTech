@@ -8,3 +8,17 @@
     caret-color: #131a35;
 
 }
+.contenedorH{
+    background: #1e2326;
+    position:fixed;
+    width: 100;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.encabezado{
+    
+    margin:0 auto;
+    background-color: #0964a5;
+    caret-color: #ffffff;
+}
