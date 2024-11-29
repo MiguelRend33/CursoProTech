@@ -1,24 +1,67 @@
-.contenedor-body{
-    width: 600px;
-    margin: 0 auto;
-    background-color: #a3d0ff;
-    padding: 0 20px 20px 20px;
-    border: 5px solid black;
-    line-height: 1.5em;
-    caret-color: #131a35;
 
+
+*{
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  html{
+    scroll-behavior: smooth;
 }
 .contenedorH{
     background: #1e2326;
     position:fixed;
-    width: 100;
+    width: 300;
     top: 0;
     left: 0;
     z-index: 99;
 }
-.encabezado{
-    
-    margin:0 auto;
-    background-color: #0964a5;
-    caret-color: #ffffff;
+.contenedorH header {
+
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
 }
+.contenedorH header .logo {
+    font-family: 'Righteous';
+    font-size: 36px ;
+    color: #1cb698;
+    text-decoration: none;
+}
+.contenedorH header .logo:hover{
+    color: #fff;
+}
+.contenedorH header nav ul{
+    display: flex;
+    list-style: none;
+
+}
+.contenedorH header nav ul li{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px ;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.contenedorH header nav ul li a:hover{
+    color: aqua;
+}
+.nav-responsive {
+    background-color:#1cb698;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
