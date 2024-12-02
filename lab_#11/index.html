@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lab.js">
+    <script>
+        // actividad 1
+        // let calificacion=""
+        // calificacion = prompt("Ingrese una calificación de 0 a 100")
+
+        // if (calificacion>=90) {
+        //     alert("Aprobado con honores")
+        // } else if (calificacion>=70){
+        //     alert("Aprobado")
+        // } else if (calificación<70){
+        //     alert("Reprobado")
+        // }
+
+
+
+
+        // actividad 2
+        // let numero=""
+        // let modulo=""
+        // numero=prompt("Ingrese un número")
+        // modulo=numero%2
+        // if (modulo == 0){
+        //     alert("El numero es par")
+        // }else{
+        //     alert("el número es impar")
+        // }
+
+
+        // let totalapagar=""
+        // totalapagar=prompt("Ingrese el total pagado")
+        // let descuento=totalapagar*0.1
+        // let total
+        // if(totalapagar>100){
+        //     total=totalapagar-descuento
+        //     alert("Se aplica el descuento y su total a pagar es: "+total)
+        // }else{
+        //     alert("No aplica el descuento")
+        // }
+
+        
+
+function suma(n1, n2) {
+    return n1 + n2;
+}
+function resta(n1, n2) {
+   return n1 - n2;
+}
+function multiplicacion(n1, n2) {
+    return n1 * n2;
+}
+function division(n1, n2) {
+    let r=0;
+    if (n2 === 0) {
+     alert('No se puede dividir entre 0');     
+    } else {
+        r= n1 / n2;
+    }
+    return r;
+}
+function calculadora(){
+    let calcular = '';
+    var n1 = 0.0;
+    var n2 = 0.0;
+    let x = 0.0;
+    let operación = '';
+    while (calcular != '0') {
+    calcular = prompt('¿Qué operación desea calcular? suma (+) resta (-) multiplicación (*) división(/) salir (0)');
+    if (calcular == 0){
+        alert('Hasta luego')
+        break;
+    } 
+    n1 = parseFloat(prompt('Ingrese el primer número'));
+    n2 = parseFloat(prompt('Ingrese el segundo número'));
+    switch (calcular) {
+        case '+':
+            x = suma(n1, n2);
+            operación = 'suma';
+            break;
+        case '-':
+            x = resta(n1, n2);
+            operación = 'resta';
+            break;
+        case '*':
+            x=multiplicacion(n1, n2);
+            operación ='multiplicación';
+            break;
+        case '/':
+            x=division(n1, n2);
+            operación='división';
+            break;
+        case '0':
+            alert('Saliendo de la calculadora');
+            break;
+        default:
+            alert('Operación no válida');
+    }
+    alert('El resultado de la ' +operación + ' es ' +x );
+}
+}
+
+// Inicia el programa
+calculadora();
+
+
+
+        
+    </script>
+</head>
+<body>
+    
+
+    
+</body>
+</html>
