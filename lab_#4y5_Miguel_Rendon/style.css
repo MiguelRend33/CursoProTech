@@ -58,10 +58,17 @@
 }
 .nav-responsive {
     background-color:#1cb698;
-    color: #fff;
+    color: #85A98F;
+    display: flex;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+.styleBody{
+    padding: auto;
+    
+    display: flex;
+    background-color:#85A98F ;
 }
 
